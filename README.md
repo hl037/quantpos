@@ -4,6 +4,9 @@ Quantpos makes FLIP (First Last Invert Play) simple !
 
 It handles all the transform part of the FLIP method.
 
+**npm package** : https://www.npmjs.com/package/quantpos
+**github repo** : https://github.com/hl037/quantpos
+
 ## Usage
 
 The main usage of this library is to move an html element at another place in the DOM while retaining its graphical position.
@@ -49,7 +52,7 @@ pnpm add quantpos
 yarn add quantpos
 ```
 
-...You know better than me
+...You know better than me =)
 
 ## API
 
