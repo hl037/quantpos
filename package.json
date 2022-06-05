@@ -1,0 +1,28 @@
+{
+  "name": "quantpos",
+  "version": "1.0.0",
+  "description": "A Library to manipulate element matrices and ease FLIP animations",
+  "keywords": ["quantpos", "position", "matrix", "matrices", "flip"],
+  "repository": "github:hl037/quantpos",
+  "homepage": "https://github.com/hl037/quantpos#Quantpos",
+  "bugs":{
+    "url": "https://github.com/hl037/quantpos/issues",
+    "email": "hl037.prog@gmail.com"
+  },
+  "main": "dist/quantpos.js",
+  "types": "dist/quantpos.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Léo Flaventin Hauchecorne <hl037.prog@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": ">=4.7.3",
+    "@tsconfig/recommended": "^1.0.1"
+  },
+  "dependencies": {
+    "rematrix": "^0.7.2"
+  }
+}

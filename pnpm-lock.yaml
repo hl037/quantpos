@@ -1,0 +1,29 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@tsconfig/recommended': ^1.0.1
+  rematrix: ^0.7.2
+  typescript: '>=4.7.3'
+
+dependencies:
+  '@tsconfig/recommended': 1.0.1
+  rematrix: 0.7.2
+
+devDependencies:
+  typescript: 4.7.3
+
+packages:
+
+  /@tsconfig/recommended/1.0.1:
+    resolution: {integrity: sha512-2xN+iGTbPBEzGSnVp/Hd64vKJCJWxsi9gfs88x4PPMyEjHJoA3o5BY9r5OLPHIZU2pAQxkSAsJFqn6itClP8mQ==}
+    dev: false
+
+  /rematrix/0.7.2:
+    resolution: {integrity: sha512-NYLmE17dX15eUPhngLMTKlRYwATxEhcRdn9LKtk/iOXHxDKglCZnD2MrMLKwLlB5FX8u9kF/9yMhlQJpeDcuPw==}
+    dev: false
+
+  /typescript/4.7.3:
+    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
