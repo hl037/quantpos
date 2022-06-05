@@ -5,6 +5,7 @@ Quantpos makes FLIP (First Last Invert Play) simple !
 It handles all the transform part of the FLIP method.
 
 **npm package** : https://www.npmjs.com/package/quantpos
+
 **github repo** : https://github.com/hl037/quantpos
 
 ## Usage
