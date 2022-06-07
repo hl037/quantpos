@@ -1,6 +1,6 @@
 {
   "name": "quantpos",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": "Léo Flaventin Hauchecorne <hl037.prog@gmail.com>",
   "license": "MIT",
   "description": "A Library to manipulate element matrices and ease FLIP animations",
@@ -9,7 +9,10 @@
     "position",
     "matrix",
     "matrices",
-    "flip"
+    "flip",
+    "change of basis",
+    "coordinates",
+    "transform"
   ],
   "repository": "github:hl037/quantpos",
   "homepage": "https://github.com/hl037/quantpos#Quantpos",
