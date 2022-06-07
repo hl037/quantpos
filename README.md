@@ -79,7 +79,7 @@ NOTE : The result is not normalized (the 4th coordinate may not be 1). Call `nor
 Normalize a vector `x`. This function always returns a `Coords4D`. If a `Coords2D` or `Coords3D` are passed, it returns the same vector with 4th coordinate set to 1 and 3rd to 0 if not provided.
 
 ### translate(...x:[Coords]|number[]): M.Matrix3D
-Create a translation matrix for x. This deffers from the rematrix implementation because this one function handles all thes cases.
+Create a translation matrix for x. This differs from the rematrix implementation because this one function handles all thes cases.
 You can either pass an array (`Coords`) as the only argument, either pass each coordinates as up to 4 arguments.
 
 ## API
@@ -102,7 +102,7 @@ Set `m` as the `transform` CSS property matrix value
 ### transitionMat(m\_new:M.Matrix, m\_old:M.Matrix):M.Matrix
 Compute a transition matrix to translate coordinates from the old space to the new space. See https://en.wikipedia.org/wiki/Change\_of\_basis (here, new and old are swapped because you generally want to express the new coordinate as a function of the old)
 
-The matrices to pass to this function are the global matrice of the elements, that you can get from `getGlobalMat()`
+The matrices to pass to this function are the global matrix of the elements, that you can get from `getGlobalMat()`
 
 ### class CoordTranslator
 This class is a helper to translate coordinates from an element to another.
@@ -115,7 +115,7 @@ why "ab" ? Because : X\_a = T\_ab X\_b where X\_a is the position expressed in b
 `CoordTranslator.T_ab` inverted
 
 #### constructor(m\_a:M.Matrix, m\_b:M.Matrix)
-The constructor accept matrices to be more general. `m_a` and `m_b` are global transformation matrices. They repectively represents the basis A and the basis B.
+The constructor accept matrices to be more general. `m_a` and `m_b` are global transformation matrices. They respectively represents the basis A and the basis B.
 
 #### create(el\_a:HTMLElement|null|undefined, el\_b:HTMLElement|null|undefined): CoordTranslator [static]
 Shortcut that simply does :
@@ -136,6 +136,10 @@ From `x_b`, expressed in basis B, compute the equivalent coordinates in basis A.
 
 To do a real FLIP animation, you would generally get the current position of the element (`gm1 = getGlobalMat(el)`), move your element in the DOM to its finale location, and retrieve its (new) current location (`m2 = getMat(el)`). Then compute the matrix for the original position (`m1 = toLocal(el, gm1`).
 Finally, pass to your favorite animation framework `m1` and `m2` ans the start and final value of your animation.
+
+## Example
+
+I used this repository to test the code. You can look at it for an example... https://github.com/hl037/quantpos-test
 
 
 
